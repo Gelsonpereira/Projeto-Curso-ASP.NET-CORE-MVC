@@ -5,11 +5,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repositories\Repositories\**" />
+    <Content Remove="Repositories\Repositories\**" />
+    <EmbeddedResource Remove="Repositories\Repositories\**" />
+    <None Remove="Repositories\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\.NETCoreApp,Version=v2.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\CasaDoCodigo.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\CasaDoCodigo.csproj.nuget.g.props" />
+    <None Include="obj\CasaDoCodigo.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\CasaDoCodigo.pdb" />
+    <None Include="obj\project.nuget.cache" />
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
